@@ -59,110 +59,136 @@ of the elements on the page can help fix issues with spacing too, especially if 
 /* OPTIONAL ↓ REMOVE COMMENTS TO SEE RED BORDER:*/
 
 * {
-  border: 1px solid red;
-}
-
-/* ---ELEMENT SELECTORS--- */
-
-html {
-  font-family: Calibri, 'Trebuchet MS', sans-serif;
-  background: linear-gradient(180deg, #84daf5, #89ffff, #affffa, #ffffff);
-}
-body {
-}
-
-h1 {
-  text-align: center;
-}
-h2 {
-  margin: 4rem auto 1rem auto;
-  text-align: center;
-}
-p,
-li {
-}
-ol {
-  padding: 20px;
-}
-
-ol li {
-  padding: 10px 0;
-}
-img {
-}
-figcaption {
-  text-align: center;
-  font-weight: bold;
-}
-footer {
-  margin: 2rem 0 2rem 0;
-}
-
-/* ---CUSTOM CLASS NAME SELECTORS--- */
-
-.banner-div {
-  display: flex;
-  justify-content: center;
-}
-#banner-long {
-  max-width: 100%;
-  height: auto;
-}
-#banner-short {
-  width: 230px;
-}
-.img-div {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.tips-div {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: start;
-}
-.top-places-div {
-  max-width: 800px;
-  margin: 5rem auto;
-  color: rgb(253, 197, 132);
-  padding: 1rem 2rem;
-}
-.top-places-div h2 {
-  text-align: center;
-  margin: 1rem auto;
-  font-weight: lighter;
-}
-
-/* ----- MEDIA QUERIES for RESPONSIVE DESIGN ----- */
-
-@media only screen and (max-width: 1500px) {
-  .img-div img {
-    width: 420px;
+    /* border: 1px solid red; */
   }
-}
-
-@media only screen and (max-width: 1100px) {
-  .tips-div {
+  
+  /* ---ELEMENT SELECTORS--- */
+  
+  html {
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    background: linear-gradient(180deg, #84daf5, #89ffff, #affffa, #ffffff);
   }
-}
-
-@media only screen and (max-width: 500px) {
   body {
-    margin: 1rem;
+    /* margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 5rem;
+    margin-right: 5rem; */
+    /* margin: 1rem 5rem 1rem 5rem; */
+    margin: 1rem 5rem;
+  }
+  
+  h1 {
+    text-align: center;
+    filter:drop-shadow(2px 2px 1px #0f6a9e);
+    
+  }
+  h2 {
+    margin: 4rem auto 1rem auto;
+    text-align: center;
   }
   p,
   li {
-    font-size: 16px;
+    font-size: 20px;
   }
-  .img-div img {
-    width: 230px;
+  ol {
+    padding: 20px;
   }
-  .tips-div img {
-    width: 230px;
+  
+  ol li {
+    padding: 10px 0;
+  }
+  img {
+    margin: 1rem;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, .5);
+  }
+  figcaption {
+    text-align: center;
+    font-weight: bold;
+    color: rgb(0, 58, 66);
+    
+  }
+  footer {
+    margin: 2rem 0 2rem 0;
+    text-align: center;
+  }
+  
+  /* ---CUSTOM CLASS NAME SELECTORS--- */
+  
+  .banner-div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
   #banner-long {
+    max-width: 100%;
+    height: auto;
   }
   #banner-short {
+    width: 230px;
+    display: none;
   }
-}
-/* ------------------------- */
+  .img-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .tips-div {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+  }
+  .top-places-div {
+    max-width: 800px;
+    margin: 5rem auto;
+    color: rgb(253, 197, 132);
+    padding: 1rem 2rem;
+    background-color:  rgb(0, 58, 66);
+    border-radius: 1rem;
+  }
+  .top-places-div h2 {
+    text-align: center;
+    margin: 1rem auto;
+    font-weight: lighter;
+  }
+  
+  /* ----- MEDIA QUERIES for RESPONSIVE DESIGN ----- */
+  
+  @media only screen and (max-width: 1500px) {
+    .img-div img {
+      width: 420px;
+    }
+  }
+  
+  @media only screen and (max-width: 1100px) {
+    .tips-div {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    body {
+      margin: 1rem;
+    }
+    p,
+    li {
+      font-size: 16px;
+    }
+    .img-div img {
+      width: 230px;
+    }
+    .tips-div img {
+      width: 230px;
+      
+    }
+    #banner-long {
+      display: none;
+
+    }
+    #banner-short {
+      display: block;
+    }
+  }
+  /* ------------------------- */
