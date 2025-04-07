@@ -116,7 +116,7 @@ Question 4: Student Class \n`);
 /**
  * Step 1: Create a variable called studentClass. Don't give it a value yet.
  *         There is a variable called studentGrade. It could be any number from 0-12.
- * 
+ * if
  * Step 2: Write code that will change the value of studentClass based on studentGrade
  *          - 0-6 will be Elementary
  *          - 7-8 will be Middle
